@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* background-color: #999; */
+      /* background-color: #394C59; */
+      background-color: white;
+
+    }
+    .container {
+      width: 80%;
+      margin-top: 20px;
+    }
+    .boxes {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      /* background-image: url("clocks.jpg"); */
+      margin-bottom: 50px;
+    }
+    .box1 {
+      width: 49%;
+      height: 300px;
+      /* border: 2px solid black; */
+    }
+    .box2 {
+      width: 49%;
+      height: 300px;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .box22{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* mix-blend-mode: multiply; */
+    /* border: #4caf50 solid; */
+    /* box-shadow: #4caf50 5px; */
+  }
+  
+  .btn.primary {
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+  }
+  .btn.primary:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+
+  .skills {
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    text-align: center;
+  }
+  
+  .skill img {
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+  }
+  
+  .skill p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .educationtable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .edu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  hr{
+    border-color: black;
+    background-color: black;
+    height: 2px;
+    margin-top: 50px;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  span{
+    margin-right: 20px;
+  }
+  .fafa{
+    margin-top: 20px;
+  }
+
+  header{
+    background-color: black;
+    width: 100%;
+  }
+  nav{
+    margin-left: 1000px;
+    padding: 10px
+  }
+
+  header nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+  header nav a:hover{
+    text-decoration: underline;
+  }
+  .skills .skill p{
+    font-weight: bold;
+  }
+  .boxes .box1 .skills p{
+    font-weight: bold;
+  }
+  .boxes .box2 .skills .lenovo{
+    font-weight: bold;
+  }
+  .education{
+    /* color: rgb(224, 215, 215); */
+    background-image: url("book.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .btn.primaryy {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+    margin-top: 20px;
+  }
+  .btn.primaryy:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+  .skillss{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .intern{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 10px;
+    height: 400px;
+    background-image: url("internship.jpeg");
+    /* backdrop-filter: blur(20px); */
+    background-size: cover;
+    background-position: center;
+  }
+  .internbox{
+    backdrop-filter: blur(10px);
+  }
+  .skilll {
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .skilll img {
+    width: 100px;
+    height: 50px;
+    /* mix-blend-mode: multiply; */
+  }
+  .skillll img {
+    width: 100px;
+    height: 50px;
+    mix-blend-mode: multiply;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="dive">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      
+  </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="boxes" id="about">
+      <div class="box1">
+        <h1>Hi, I'm Sharan</h1>
+        <h3>Front End Developer</h3>
+        <p style="line-height: 1.5;">I specialize in building clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. With a passion for creating seamless user experiences and visually appealing designs, I enjoy bringing ideas to life on the web.</p>
+        <p>Let’s connect and build something amazing!</p>
+        <a href="resumeimg.png" class="btn primary">Resume</a>
+        
+      </div>
+      <div class="box2">
+        <div class="box22">
+            <img src="profile.jpg" class="profile-pic">
+        </div>
+        <!-- <div class="buttons">
+            <a href="resumeimg.png" class="btn primary">Resume</a>
+            <a href="sharan962003@gmail.com" class="btn primary">Resume</a>
+            
+        </div> -->
+    
+      </div>
+    </div>
+    <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <p>Proficient in typewriting with exceptional typing speed and accuracy, enabling efficient documentation and coding.</p>
+        <p>Skilled in writing clean, efficient, and functional code for web development, problem-solving, and software solutions.</p>
+        <p> Passionate about creative art, with strong drawing skills that bring ideas and concepts to life visually.</p>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="htmlimg.png">
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <img src="cssimg.png">
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <img src="jsimg.png">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="python.png">
+          <p>Python</p>
+        </div>
+      
+    </div>
+
+    <div class="skills" id="education">
+      <h2>Education</h2>
+      <div class="skillll">
+        <img src="degree.png">
+      </div>
+      <div class="education" style="height: 535px; border-radius: 10px; display: flex; align-items: center; flex-direction: column;">
+        <p>B.E. in Electronics and Communication Engineering</p>
+        <div  style="height: 200px; width: 80%; border-radius: 10px; backdrop-filter: blur(5px); box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+          <h3>Anna university</h3>
+          <p style="line-height: 1.5;">I am a graduate of the University College of Engineering Panruti in Cuddalore, affiliated with Anna University, where I earned a degree in Electronics and Communication Engineering. My academic background has provided me with a strong foundation in electronics, communication systems, and also in computer science and related technologies.</p>
+          <span style="background-color: green; padding: 7px; border-radius: 15px; color: white;">with CGPA: 7.15</span>
+        </div>
+        <div style="height: 175px; margin-top: 30px; width: 80%; border-radius: 10px; backdrop-filter: blur(5px); box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+          <h3>Schooling</h3>
+          <p style="line-height: 1.5">I completed my schooling at St. Dominic Savio Matriculation Higher Secondary School in Nellikuppam, Cuddalore, where I developed a strong academic foundation and a disciplined approach to learning.</p>
+          <span style="background-color: green; padding: 7px; border-radius: 15px; color: white;">Class 12th: 7.15</span>
+          <span style="background-color: green; padding: 7px; border-radius: 15px; color: white;">Class 10th: 7.15</span>
+        </div>
+        <a href="for resume.html" class="btn primaryy">Education Credential</a>
+      </div>
+      
+    </div>
+
+    
+    <div class="skills">
+      <h2>Internship</h2>
+      <div class="intern">
+        <div class="skilll">
+          <img src="lenovo.jpeg">
+        </div>
+        <div class="internbox">
+          <p style="line-height: 1.5;">I work in the assembly section, where I assist in assembling components for ThinkCentre, IP3 towers, PCs, and laptops. <br> Additionally, I am expanding my expertise by learning various testing procedures to further enhance my skill set.</p>
+          <p style="line-height: 1.5;">Working in the assembly section has been highly beneficial for understanding the company's procedures.</p>
+        </div>
+        <div class="skillss">
+          <a href="for resume.html" class="btn primaryy">Internship Credential</a>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- <div class="boxes">
+      <div class="box1">
+        
+      </div>
+      <div class="box2">
+        
+      </div>
+      
+    </div> -->
+    
+  
+    <hr>
+
+    <div class="contact" id="contact">
+      <h1>Contact</h1>
+      <div class="contacticon">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <span>9600279435</span>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <span>sharan962003@gmail.com</span>
+      </div>
+      <div class="fafa">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span style="text-align: center;">No. 37 thideerkuppam, Nellikuppam, </span>
+        <p style="text-align: center;">Cuddalore-607105</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
